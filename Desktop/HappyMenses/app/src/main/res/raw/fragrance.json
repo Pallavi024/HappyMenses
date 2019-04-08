@@ -1,0 +1,110 @@
+{
+  "fragrances": [
+    {
+      "fragranceName": "Product Name 1",
+      "description": "Description 1",
+      "imageUrl": "versace-eros.png",
+      "price": 41.29,
+      "userRating": 5
+    },
+    {
+      "fragranceName": "Product Name 2",
+      "description": "Description 2",
+      "imageUrl": "Burberry.png",
+      "price": 27.29,
+      "userRating": 4
+    },
+    {
+      "fragranceName": "Product Name 3",
+      "description": "Description 3",
+      "imageUrl": "chrome.png",
+      "price": 25.89,
+      "userRating": 4
+    },
+    {
+      "fragranceName": "Product Name 4",
+      "description": "Description 4",
+      "imageUrl": "mont-blanc.png",
+      "price": 32.19,
+      "userRating": 5
+    },
+    {
+      "fragranceName": "Product Name 5",
+      "description": "Description 5",
+      "imageUrl": "Euphoria.png",
+      "price": 34.99,
+      "userRating": 5
+    },
+    {
+      "fragranceName": "Product Name 6",
+      "description": "Description 6",
+      "imageUrl": "sauvage.png",
+      "price": 108.49,
+      "userRating": 4
+    },
+    {
+      "fragranceName": "Product Name 7",
+      "description": "Description 7",
+      "imageUrl": "cerruti-1881.png",
+      "price": 18.19,
+      "userRating": 4
+    },
+    {
+      "fragranceName": "Product Name 8",
+      "description": "Description 8",
+      "imageUrl": "pierre-cardin.png",
+      "price": 10.49,
+      "userRating": 4
+    },
+    {
+      "fragranceName": "Product Name 9",
+      "description": "Description 9",
+      "imageUrl": "jimmy-choo.png",
+      "price": 41.99,
+      "userRating": 4
+    },
+    {
+      "fragranceName": "Product Name 10",
+      "description": "Description 10",
+      "imageUrl": "ralph-lauren.png",
+      "price": 55.29,
+      "userRating": 5
+    },
+    {
+      "fragranceName": "Product Name 11",
+      "description": "Description 11",
+      "imageUrl": "vera-wang.png",
+      "price": 22.39,
+      "userRating": 5
+    },
+    {
+      "fragranceName": "Product Name 12",
+      "description": "Description 12",
+      "imageUrl": "black-opium.png",
+      "price": 75.59,
+      "userRating": 5
+    },
+    {
+      "fragranceName": "Product Name 13",
+      "description": "Description 13",
+      "imageUrl": "eternity-aqua.png",
+      "price": 30.09,
+      "userRating": 4
+    },
+    {
+      "fragranceName": "Product Name 14",
+      "description": "Description 14",
+      "imageUrl": "gucci-guilty.png",
+      "price": 46.69,
+      "userRating": 5
+    },
+    {
+      "fragranceName": "Product Name 15",
+      "description": "Description 15",
+      "imageUrl": "dkny-be-delicious.png",
+      "price": 30.79,
+      "userRating": 5
+    }
+  ]
+}
+

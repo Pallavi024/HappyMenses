@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home">
+
+    </item>
+    <item
+        android:id="@+id/cycle"
+        android:title="CycleTracker">
+    </item>
+    <item
+        android:id="@+id/chat"
+        android:title="Chat With Doctor">
+    </item>
+    <item
+        android:id="@+id/products"
+        android:title="Products">
+    </item>
+    <item
+        android:id="@+id/modules"
+        android:title="Modules">
+    </item>
+    <item
+        android:id="@+id/log"
+        android:title="LogOut">
+    </item>
+
+</menu>

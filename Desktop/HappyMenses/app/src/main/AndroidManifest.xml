@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.root.happymenses">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CycleTracker"
+            android:label="Cycle Tracker"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Chat"
+            android:label="Chat With Doctor"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Products"
+            android:label="Products"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Modules"
+            android:label="Modules"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".DetailActivity"
+            android:parentActivityName=".Products"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Products" />
+        </activity>
+
+        <activity android:name=".CartActivity"
+            android:label="Cart"
+            android:parentActivityName=".Products">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Products" />
+        </activity>
+
+        <activity android:name=".WishListActivity"
+            android:label="Wish List"
+            android:parentActivityName=".Products">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Products" />
+        </activity>
+
+        <provider
+            android:name="com.example.root.happymenses.data.FragranceProvider"
+            android:authorities="com.example.root.happymenses"
+            android:exported="false"
+            />
+
+
+</application>
+
+</manifest>
