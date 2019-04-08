@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.root.happymenses">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,52 +19,56 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CycleTracker"
+        <activity
+            android:name=".CycleTracker"
             android:label="Cycle Tracker"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".HomeActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".HomeActivity" />
         </activity>
-        <activity android:name=".Chat"
+        <activity
+            android:name=".Chat"
             android:label="Chat With Doctor"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".HomeActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".HomeActivity" />
         </activity>
-        <activity android:name=".Products"
+        <activity
+            android:name=".Products"
             android:label="Products"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".HomeActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".HomeActivity" />
         </activity>
-        <activity android:name=".Modules"
+        <activity
+            android:name=".Modules"
             android:label="Modules"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".HomeActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".HomeActivity" />
         </activity>
-
-        <activity android:name=".DetailActivity"
+        <activity
+            android:name=".DetailActivity"
             android:parentActivityName=".Products"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Products" />
         </activity>
-
-        <activity android:name=".CartActivity"
+        <activity
+            android:name=".CartActivity"
             android:label="Cart"
             android:parentActivityName=".Products">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Products" />
         </activity>
-
-        <activity android:name=".WishListActivity"
+        <activity
+            android:name=".WishListActivity"
             android:label="Wish List"
             android:parentActivityName=".Products">
             <meta-data
@@ -71,12 +77,11 @@
         </activity>
 
         <provider
-            android:name="com.example.root.happymenses.data.FragranceProvider"
+            android:name=".data.FragranceProvider"
             android:authorities="com.example.root.happymenses"
-            android:exported="false"
-            />
+            android:exported="false" />
 
-
-</application>
+        <activity android:name=".HomeActivity"></activity>
+    </application>
 
 </manifest>
