@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
+import com.example.root.happymenses.data.FragranceDbHelper;
 
 import static com.example.root.happymenses.data.FragranceContract.FragranceEntry.CART_TABLE;
 
@@ -98,6 +99,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             // Start the new activity
             startActivity(logsIntent);
 
+            FragranceDbHelper.delete();
             Toast.makeText(this,"Logged out",Toast.LENGTH_SHORT).show();
 
         }

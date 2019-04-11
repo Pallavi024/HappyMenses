@@ -43,7 +43,7 @@ public class FragranceDbHelper extends SQLiteOpenHelper  {
     private static final String DATABASE_NAME = "fragrances.db";
     private static final int DATABASE_VERSION = 1;
     Context context;
-    SQLiteDatabase db;
+    static SQLiteDatabase db;
     ContentResolver mContentResolver;
 
 
@@ -181,12 +181,12 @@ public class FragranceDbHelper extends SQLiteOpenHelper  {
         }
     }
 
-    public   void delete() {
-        SQLiteDatabase db = this.getWritableDatabase();
+    public static void delete() {
+       // SQLiteDatabase db = this.getWritableDatabase();
         db.delete(CART_TABLE, null, null);
         //db.execSQL("delete * from"+ TABLE_NAME);
-        //db.execSQL("delete from "+ CART_TABLE);
-        //db.close();
+        db.execSQL("delete from "+ CART_TABLE);
+        db.close();
     }
 
 
