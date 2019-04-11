@@ -2,6 +2,7 @@ package com.example.root.happymenses;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -11,7 +12,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+import static com.example.root.happymenses.data.FragranceContract.FragranceEntry.CART_TABLE;
+
+public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
 
@@ -90,11 +93,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         if(id == R.id.log)
         {
             // Create a new intent to open the {@link NumbersActivity}
-            Intent logsIntent = new Intent(HomeActivity.this, HomeActivity.class);
+            Intent logsIntent = new Intent(HomeActivity.this, MainActivity.class);
 
             // Start the new activity
             startActivity(logsIntent);
+
             Toast.makeText(this,"Logged out",Toast.LENGTH_SHORT).show();
+
         }
         return false;
     }

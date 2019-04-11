@@ -9,100 +9,35 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity{
-    //private DrawerLayout mDrawerLayout;
-    //private ActionBarDrawerToggle mToggle;
+import com.example.root.happymenses.data.Login;
+import com.example.root.happymenses.data.Signup;
 
+public class MainActivity extends AppCompatActivity {
+    Button btn,btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-        /*
-    mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
-    mToggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close);
-    mDrawerLayout.addDrawerListener(mToggle);
-    mToggle.syncState();
-    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    NavigationView navigationView =(NavigationView) findViewById(R.id.navigation_view);
-    navigationView.setNavigationItemSelectedListener(this);
-
-
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if(mToggle.onOptionsItemSelected(item))
-        {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+        btn=findViewById(R.id.button);
+        btn2=findViewById(R.id.button2);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivity.this,Signup.class);
+                startActivity(i);
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in=new Intent(MainActivity.this,Login.class);
+                startActivity(in);
+            }
+        });
     }
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if(id == R.id.home)
-        {
-            // Create a new intent to open the {@link NumbersActivity}
-            Intent homeIntent = new Intent(MainActivity.this, MainActivity.class);
-
-            // Start the new activity
-            startActivity(homeIntent);
-            Toast.makeText(this,"This is Home",Toast.LENGTH_LONG).show();
-        }
-        if(id == R.id.cycle)
-        {
-            // Create a new intent to open the {@link NumbersActivity}
-            Intent cycleIntent = new Intent(MainActivity.this, CycleTracker.class);
-
-            // Start the new activity
-            startActivity(cycleIntent);
-            Toast.makeText(this,"This is Cycle Tracker",Toast.LENGTH_LONG).show();
-        }
-        if(id == R.id.chat)
-        {
-            // Create a new intent to open the {@link NumbersActivity}
-            Intent chatIntent = new Intent(MainActivity.this, Chat.class);
-
-            // Start the new activity
-            startActivity(chatIntent);
-            Toast.makeText(this,"Chat with an experienced Doctor",Toast.LENGTH_LONG).show();
-        }
-        if(id == R.id.products)
-        {
-            // Create a new intent to open the {@link NumbersActivity}
-            Intent productIntent = new Intent(MainActivity.this,Products.class);
-
-            // Start the new activity
-            startActivity(productIntent);
-            Toast.makeText(this,"Everything you want at one place!!",Toast.LENGTH_LONG).show();
-        }
-        if(id == R.id.modules)
-        {
-            // Create a new intent to open the {@link NumbersActivity}
-            Intent modulesIntent = new Intent(MainActivity.this, Modules.class);
-
-            // Start the new activity
-            startActivity(modulesIntent);
-            Toast.makeText(this,"Answers To all your Questions!!",Toast.LENGTH_LONG).show();
-        }
-        if(id == R.id.log)
-        {
-            // Create a new intent to open the {@link NumbersActivity}
-            Intent logsIntent = new Intent(MainActivity.this, MainActivity.class);
-
-            // Start the new activity
-            startActivity(logsIntent);
-            Toast.makeText(this,"Logged out",Toast.LENGTH_SHORT).show();
-        }
-        return false;
-        */
-        public void submit(View view) {
-            Intent loginIntent = new Intent(MainActivity.this, HomeActivity.class);
-            startActivity(loginIntent);
-
-    }
 }
+

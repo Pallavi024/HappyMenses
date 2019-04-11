@@ -3,12 +3,23 @@ package com.example.root.happymenses.data;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.util.Log;
+import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.example.root.happymenses.Chat;
+import com.example.root.happymenses.CycleTracker;
+import com.example.root.happymenses.HomeActivity;
+import com.example.root.happymenses.MainActivity;
+import com.example.root.happymenses.Modules;
+import com.example.root.happymenses.Products;
 import com.example.root.happymenses.R;
 
 import org.json.JSONArray;
@@ -26,7 +37,7 @@ import static com.example.root.happymenses.data.FragranceContract.FragranceEntry
  * Created by root on 7/4/19.
  */
 
-public class FragranceDbHelper extends SQLiteOpenHelper {
+public class FragranceDbHelper extends SQLiteOpenHelper  {
     private static final String TAG = FragranceDbHelper.class.getSimpleName();
 
     private static final String DATABASE_NAME = "fragrances.db";
@@ -168,6 +179,14 @@ public class FragranceDbHelper extends SQLiteOpenHelper {
             Log.e(TAG, e.getMessage(), e);
             e.printStackTrace();
         }
+    }
+
+    public   void delete() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(CART_TABLE, null, null);
+        //db.execSQL("delete * from"+ TABLE_NAME);
+        //db.execSQL("delete from "+ CART_TABLE);
+        //db.close();
     }
 
 
