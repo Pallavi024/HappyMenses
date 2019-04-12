@@ -11,16 +11,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.os.Handler;
 
 import com.example.root.happymenses.data.Login;
 import com.example.root.happymenses.data.Signup;
 
 public class MainActivity extends AppCompatActivity {
     Button btn,btn2;
+    //private static int SPLASH_TIME_OUT = 5000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         btn=findViewById(R.id.button);
         btn2=findViewById(R.id.button2);
         btn.setOnClickListener(new View.OnClickListener() {
