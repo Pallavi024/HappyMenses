@@ -10,6 +10,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.example.root.happymenses.data.FragranceDbHelper;
 
@@ -18,11 +19,20 @@ import static com.example.root.happymenses.data.FragranceContract.FragranceEntry
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
+    TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
+        Intent intent=getIntent();
+        String names=intent.getStringExtra("Names");
+
+        tv=findViewById(R.id.text);
+        String s="Welcome ";
+        String s1=" To Happy Menses ";
+        s=s+names+s1;
+        tv.setText(s);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         mToggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);

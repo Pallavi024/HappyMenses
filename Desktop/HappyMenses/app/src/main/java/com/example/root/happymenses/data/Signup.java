@@ -69,8 +69,10 @@ public class Signup extends AppCompatActivity {
                     Intent signupIntent = new Intent(Signup.this, HomeActivity.class);
 
                     // Start the new activity
-                    startActivity(signupIntent);
+
                     Toast.makeText(getApplicationContext(),"Signed Up successfully",Toast.LENGTH_LONG).show();
+                    signupIntent.putExtra("Names",Name);
+                    startActivity(signupIntent);
                 }
             }
         });
