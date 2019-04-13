@@ -25,5 +25,9 @@
         android:id="@+id/log"
         android:title="LogOut">
     </item>
+    <item
+        android:id="@+id/news"
+        android:title="News">
+    </item>
 
 </menu>

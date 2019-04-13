@@ -87,34 +87,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InfoActivity"
+        <activity
+            android:name=".InfoActivity"
             android:label=" Basic Information"
             android:parentActivityName=".Modules">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Modules" />
         </activity>
-        <activity android:name=".DosActivity"
-            android:label="Do's and Dont's"
+        <activity
+            android:name=".DosActivity"
+            android:label="Do&apos;s and Dont&apos;s"
             android:parentActivityName=".Modules">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Modules" />
         </activity>
-        <activity android:name=".DisordersActivity"
+        <activity
+            android:name=".DisordersActivity"
             android:label="Menstrual Disorders"
             android:parentActivityName=".Modules">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Modules" />
         </activity>
-        <activity android:name=".MythsActivity"
+        <activity
+            android:name=".MythsActivity"
             android:label="Myths about Menstruation"
             android:parentActivityName=".Modules">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Modules" />
         </activity>
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".NewsListItemActivity" />
     </application>
 
 </manifest>
