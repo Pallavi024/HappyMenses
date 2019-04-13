@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@drawable/bg5"
     tools:context="com.example.root.happymenses.CycleTracker">
-
-
 
 
     <Button
@@ -16,16 +15,19 @@
         android:layout_height="wrap_content"
         android:text="MARK YOUR DATE"
         android:onClick="currentscenario"
-        android:paddingBottom="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"/>
-
+        android:padding="10dp"
+        android:layout_marginLeft="100dp"
+        />
     <CalendarView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:layout_marginBottom="100dp">
+        android:layout_marginBottom="100dp"
+        android:dateTextAppearance="@style/calender"
+        android:weekDayTextAppearance="@style/calender"
+        android:focusedMonthDateColor="@android:color/black">
+
+
     </CalendarView>
 
 
