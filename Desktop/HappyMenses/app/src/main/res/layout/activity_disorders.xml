@@ -1,9 +1,337 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e6ffe6"
     tools:context="com.example.root.happymenses.DisordersActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/disorder1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Menstrual Disorders"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:textSize="30dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/diorder1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Types Of Menstrual Disorders"
+        android:textSize="30dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.Amenorrhea"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.Premenstrual Syndrome (PMS)"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.Dysmenorrhea"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.Menorrhagia"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:paddingLeft="10dp"
+        android:text="@string/disorder2"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:text="@string/disorder3"
+        android:paddingTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.Psychological symptoms (depression, anxiety, irritability)"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.Gastrointestinal symptoms (bloating)"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.Fluid retention (swelling of fingers, ankles and feet)"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.Skin problems (acne) "
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.Headache"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Simple modifications in lifestyle can help eliminate or reduce the severity of symptoms, including:
+Exercising 3 to 5 times each week
+Eating a well-balanced diet that includes whole grains, vegetables and fruit, and a decreasing salt, sugar, caffeine and alcohol intake
+Getting adequate sleep and rest
+"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amenorrhea"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Amenorrhea is characterized by absent menstrual periods for more than three monthly menstrual cycles. There are two types of amenorrhea: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Types of Amenorrhea"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primary amenorrhea: Menstruation does not begin at puberty."
+        android:textColor="@android:color/black"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Secondary amenorrhea: Normal and regular menstrual periods which become increasingly abnormal and irregular or absent. This may be due to a physical cause typically of later onset."
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Amenorrhea can occur for a number of reasons as part of the normal course of life, such as pregnancy, breast-feeding or menopause. Or, it may occur as a result of medications or a medical problem"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="If at least three consecutive menstrual periods are missed or if you've never had a menstrual period and are 16 years or older, it is important to see a healthcare professional. As with any condition, early diagnosis and treatment is very important. "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Dysmenorrhea is characterized by severe and frequent menstrual cramps and pain associated with menstruation. The cause of dysmenorrhea is dependent on if the condition is primary or secondary. With primary dysmenorrheal, women experience abnormal uterine contractions resulting from a chemical imbalance in the body. Secondary dysmenorrhea is caused by other medical conditions, most often endometriosis. Other possible causes may include: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.pelvic inflammatory disease (PID)"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.uterine fibroids"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.abnormal pregnancy (i.e., miscarriage, ectopic)"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.infection, tumors, or polyps in the pelvic cavity"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Dysmenorrhea Symptoms The most common symptoms may include: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="1.Cramping or pain in the lower abdomen"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.Low back pain or pain radiating down the legs"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.Nausea"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.Vomiting"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.Diarrhea"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Treatments for menstrual disorders "
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Discussing your menstrual disorder symptoms with your doctor can help determine what type of treatments can best reduce or relieve your symptoms, including: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.Diuretics"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.Prostaglandin inhibitors"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.Hormone supplements"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="4.Oral contraceptives"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.Tranquilizers"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
+</ScrollView>
