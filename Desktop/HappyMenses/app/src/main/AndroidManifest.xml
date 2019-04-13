@@ -14,9 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".CycleTracker"
             android:label="Cycle Tracker"
@@ -88,6 +86,34 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".InfoActivity"
+            android:label=" Basic Information"
+            android:parentActivityName=".Modules">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Modules" />
+        </activity>
+        <activity android:name=".DosActivity"
+            android:label="Do's and Dont's"
+            android:parentActivityName=".Modules">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Modules" />
+        </activity>
+        <activity android:name=".DisordersActivity"
+            android:label="Menstrual Disorders"
+            android:parentActivityName=".Modules">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Modules" />
+        </activity>
+        <activity android:name=".MythsActivity"
+            android:label="Myths about Menstruation"
+            android:parentActivityName=".Modules">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Modules" />
         </activity>
     </application>
 
