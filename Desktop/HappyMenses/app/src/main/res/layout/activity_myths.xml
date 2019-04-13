@@ -1,9 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.root.happymenses.MythsActivity">
+    android:layout_height="match_parent">
+    <RelativeLayout
 
-</android.support.constraint.ConstraintLayout>
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="#FEFD8D"
+        android:layout_height="match_parent"
+        tools:context="com.example.root.happymenses.DosActivity">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginTop="0dp"
+            android:src="@drawable/mypic2"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/t1"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/img"
+
+            android:text="1. You’re clumsy."/>
+        <TextView
+            android:id="@+id/t2"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t1"
+
+            android:text="2. Tampons will break your hymen and make you impure."/>
+        />
+        <TextView
+            android:id="@+id/t3"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t2"
+
+            android:text="3. Can’t take a bath."/>
+
+        />
+        <TextView
+            android:id="@+id/t4"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t3"
+
+            android:text="4. Everybody gets PMS and it always manifests as - crankiness/irritability."/>
+
+/>
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t4"
+
+            android:text="5. Don’t go camping because the bears can smell it from far away."/>
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t5"
+
+            android:text="6. Don’t perm your hair until after you’ve had your first period."/>
+
+
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t6"
+
+            android:text="7. If you touch any vegetable before or during the pickling process they would not pickle and would go bad."/>
+
+        <TextView
+            android:id="@+id/t8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t7"
+
+            android:text="8. You can’t be in homes or have contact with anybody."/>
+
+        <TextView
+            android:id="@+id/t9"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t8"
+
+            android:text="9. You get slapped on the face when you get your first period so you have “beautiful” red cheeks all your life."/>
+
+        <TextView
+            android:id="@+id/t10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t9"
+
+            android:text="10. If you shower with hot water while on your period you will have a heavy flow."/>
+        <TextView
+            android:id="@+id/t11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t10"
+
+            android:text="11. You can’t drink cold beverages because they will give you cramps."/>
+        <TextView
+            android:id="@+id/t12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t11"
+
+            android:text="12. Don’t wash or cut your hair."/>
+        <TextView
+            android:id="@+id/t13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t12"
+
+            android:text="13.  Having sex can kill your partner."/>
+        <TextView
+            android:id="@+id/t14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t13"
+
+            android:text="14. You can’t touch flowers because they’ll die quicker."/>
+
+        <TextView
+            android:id="@+id/t15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t14"
+
+            android:text="15. You need to wash your pads before throwing them out. Otherwise ghosts will come and haunt you.."/>
+
+        <TextView
+            android:id="@+id/t16"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/t15"
+
+            android:text="16. You can’t enter a kitchen or cook food for anyone else."/>
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_below="@id/t16"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+
+
+            android:src="@drawable/mypic3"
+            />
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
