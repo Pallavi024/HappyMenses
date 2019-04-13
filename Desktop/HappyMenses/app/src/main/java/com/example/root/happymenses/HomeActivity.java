@@ -101,6 +101,15 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             startActivity(modulesIntent);
             Toast.makeText(this,"Answers To all your Questions!!",Toast.LENGTH_LONG).show();
         }
+        if(id == R.id.news)
+        {
+            // Create a new intent to open the {@link NumbersActivity}
+            Intent modulesIntent = new Intent(HomeActivity.this, NewsActivity.class);
+
+            // Start the new activity
+            startActivity(modulesIntent);
+            Toast.makeText(this,"NEWS",Toast.LENGTH_LONG).show();
+        }
         if(id == R.id.log)
         {
             // Create a new intent to open the {@link NumbersActivity}
