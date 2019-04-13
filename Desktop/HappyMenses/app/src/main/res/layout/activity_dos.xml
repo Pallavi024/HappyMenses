@@ -1,9 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E5F8FB"
     tools:context="com.example.root.happymenses.DosActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="0dp"
+        android:src="@drawable/mypic1"
+        android:scaleType="centerCrop"/>
+      <TextView
+          android:id="@+id/xyz"
+          android:layout_below="@+id/img"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+          android:textSize="20sp"
+          android:text="People around the world are denied access to the resources they need to manage their periods,and it impacts not only their health, but their self esteem, education, and economic empowerment. I consider the first step to feeling empowered and confident on *any* subject to be getting educated, and when it comesto women’s health, especially reproductive health, it can be difficult – there’s a ton of misinformation ou there from whether or not hymens exist (or matter) to whether you should wash yourvagina with soap (spoiler alert: DON’T). "/>
+
+    <TextView
+        android:id="@+id/dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xyz"
+        android:textColor="#000000"
+        android:text="DO'S"
+        android:textSize="50sp"
+        />
+    <TextView
+        android:id="@+id/ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. PERIOD SEX"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_below="@+id/dos"
+        android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+        android:id="@+id/ps1"
+        android:layout_below="@+id/ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Of all the annoying myths about what having your period prevents you from doing – exercising,taking baths, making sushi, etc. – telling people they can’t get it on while they’re riding the cotton pony(I tried it, I won’t do it again) is just rude. Orgasms in general are actually pretty great for boosting your mood andalleviating your cramps – and obviously, having a partner is so not necessary. One thing to note: if you engage in period sex make sure you take an extra sec to stay safe and healthy. There’s a chance you’ll be more susceptible to infections,but it’s nothing proper protection and clean-up can’t prevent. So as an addendum to this DO, DON’T skip condoms and DON’T skip peeing or washing up afterwards. "
+        />
+    <TextView
+        android:id="@+id/tcycle"
+        android:layout_below="@+id/ps1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. TRACKING CYCLE"
+        android:textStyle="bold"
+        android:textSize="40sp"
+
+        android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tcycle"
+        android:id="@+id/tcycle1"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Whether you use a manual method, an app, or an aggressively detailed Google Sheet that people keep asking you to stop talking about on the subway (not that I do this, but I totes recommend it), tracking your cycle is seriously useful. One of the easiest ways to keep on top of your menstrual health is bykeeping an eye on what’s going on! First of all, knowing when your period is coming will help you avoid surprise leaks,which are the enemy of good menstrual hygiene. Making a note of any irregularities in symptoms, consistency, orcolor will also help inform you if something’s off down there, and if you need to hit up your gyno.
+"/>
+    <TextView
+        android:id="@+id/yo"
+        android:layout_below="@+id/tcycle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. TALKING ABOUT YO’ FLOW "
+        android:textStyle="bold"
+        android:textSize="40sp"
+
+        android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yo"
+        android:id="@+id/yo1"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="A huge part of why everything I was just talking about isn’t already common knowledge is that there’s still plenty of stigma around discussing menstruation. It’s not hard to understand why everyone’s so afraid to be #PeriodProud – nearly half of women have experienced some sort of period shaming. Pressuring people to hide their periods not only contributes to a lack of education, but a lack of access to necessary products, and in turn, improper menstrual hygiene. The best thing you can do to help break the taboo is to start thinking and talking about your period like a normal, natural bodily function… you know, since it is. "
+        />
+    <TextView
+        android:id="@+id/CD"
+        android:layout_below="@+id/yo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. CALL YOUR DOCTOR "
+        android:textStyle="bold"
+        android:textSize="40sp"
+
+        android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/CD"
+        android:id="@+id/CD1"
+        android:text="(Don’t just Google it; Google will just tell you you’re dying, I promise)! And if your blood is a weird color you’ve never seen before? Call your doctor! Smell something funny when you pull down your pants? Call your damn doctor! And definitely call in reinforcements if your cramps are unbearable, because that shouldn’t be normal. No one gets a prize for powering through excruciating pain, seriously. "/>
+
+    <TextView
+        android:id="@+id/donts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CD1"
+        android:textColor="#000000"
+        android:text="DONT'S"
+        android:textSize="50sp"
+        />
+    <TextView
+        android:id="@+id/land"
+        android:layout_below="@+id/donts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. LANDSCAPING "
+        android:textStyle="bold"
+        android:textSize="40sp"
+
+        android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/land1"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_below="@id/land"
+        android:text="On all the other days of the month, what you’ve got going on down there is totally up to you. Also, it’s totally a myth that staying bare is “cleaner.” However, you should consider waiting until after crimson wave rolls through to pick-up your razor or get waxed. Thing is you’re waaay more sensitive (yup, physically and emotionally – lucky us!) while you’re on your period, so even waxing pros will experience more pain, and newly-shaved skin will be more prone to irritation.
+"/>
+    <TextView
+        android:id="@+id/Douching"
+        android:layout_below="@+id/land1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. DOUCHING "
+        android:textStyle="bold"
+        android:textSize="40sp"
+
+        android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@+id/Douching"
+        android:id="@+id/Douching1"
+        android:text="Seriously. Don’t. Guess what? Vaginas clean-up all by themselves! Isn’t that neat? But basically, anything else you’re putting up there is messing with its natural ~flow~. This isn’t to say you shouldn’t be cleaning around it thoroughly, including your pubic hair. Washing a couple times a day while you’re on your period is ideal, and while I love flowery-ass soap more than anyone, it’s a good idea to opt for unscented soaps to keep things au naturale. "/>
+
+    <TextView
+        android:id="@+id/igsy"
+        android:layout_below="@+id/Douching1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. IGNORING YOUR SYMPTOMS "
+        android:textStyle="bold"
+        android:textSize="40sp"
+
+        android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/igsy1"
+        android:layout_below="@+id/igsy"
+        android:textSize="20sp"
+        android:text="On that note, women have been historically overlooked when it comes to their pain, whether that’s emotional or physical. Unfortunately, feeling crampy and bleh tend to come with the package of being a menstruating person, but you know your own body – if you feel like your discomfort is irregular, don’t just chalk it up to PMS.
+"/>
+
+
+
+
+
+
+</RelativeLayout>
+    </ScrollView>

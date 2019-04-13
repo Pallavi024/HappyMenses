@@ -7,9 +7,8 @@
     android:orientation="vertical"
     tools:context="com.example.root.happymenses.SplashActivity">
 
-    <ImageView
-        android:layout_width="384dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo" />
+    <include layout="@layout/video_background"
+        />
+
 
 </LinearLayout>
