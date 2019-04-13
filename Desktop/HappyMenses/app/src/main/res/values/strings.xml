@@ -35,34 +35,5 @@
     <string name="diorder1">With each menstrual cycle, the endometrium (uterine lining) prepares itself to nourish a fetus. If fertilization doesn’t occur, the body sheds the endometrium during the monthly (on average) cycle. In some cases, an irregularity can occur in this cycle, indicating any of the following menstrual disorders: </string>
     <string name="disorder2">Premenstrual Syndrome (PMS)</string>
     <string name="disorder3">PMS is any unpleasant or uncomfortable symptom during your cycle that may temporarily disturb normal functioning. These symptoms may last from a few hours to many days, and the types and intensity of symptoms can vary in individuals. Premenstrual Dysphoric Disorder (PMDD) is a much more severe form of PMS which affects approximately 3-8percent of women of reproductive age. PMDD requires treatment by a physician. According to the American College of Obstetricians and Gynecologists, nearly 85percent of women experience at least one common symptom associated with PMS during their reproductive years. An estimated 5percent have symptoms so extreme they are disabled by the condition. PMS Symptoms Although each individual may experience symptoms differently, the most common symptoms of PMS can include any of the following: </string>
-    <string name="no_news">No News found.</string>
-    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
-    <string name="no_internet_connection">No internet connection.</string>
-    <string name="settings_menu_item">Settings</string>
-    <string name="settings_title">News Settings</string>
-
-    <string name="settings_order_by_label">Order By</string>
-    <string name="settings_order_by_key" translatable="false">order_by</string>
-    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_newest_news_value</string>
-
-    <string name="settings_order_by_newest_news_label">Newest</string>
-    <string name="settings_order_by_newest_news_value" translatable="false">newest</string>
-
-    <string name="settings_order_by_oldest_news_label">Oldest</string>
-    <string name="settings_order_by_oldest_news_value" translatable="false">oldest</string>
-
-
-    <string name="settings_section_label">Section</string>
-    <string name="settings_section_news_key" translatable="false">section</string>
-    <string name="settings_section_news_default" translatable="false">@string/settings_section_all_news_value</string>
-
-    <string name="settings_section_all_news_label">All</string>
-    <string name="settings_section_all_news_value" translatable="false"></string>
-
-    <string name="settings_section_society_label">Society</string>
-    <string name="settings_section_society_value" translatable="false">society</string>
-
-    <string name="settings_section_Business_news_label">Business</string>
-    <string name="settings_section_Business_value" translatable="false">business</string>
 
 </resources>

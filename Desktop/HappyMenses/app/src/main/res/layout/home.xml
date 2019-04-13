@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer"
+    android:background="@drawable/pic1"
     tools:context="com.example.root.happymenses.MainActivity">
 
     <LinearLayout
@@ -14,6 +15,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
             android:id="@+id/text"
             android:textSize="50dp"/>
 
